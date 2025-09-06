@@ -18,7 +18,7 @@ import {
 import siteContent from "@/content/site";
 import { CreditCard, Mail, Settings, User } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useSubscription } from "@/state/subscription-context";
+import { StepKey, useSubscription } from "@/state/subscription-context";
 import {
 	Tooltip,
 	TooltipContent,
@@ -41,7 +41,7 @@ export default function SubscriptionDialog({
 	const subs = siteContent.subscriptions;
 	const plan = useMemo(() => {
 		if (!subs?.plans?.length) return undefined;
-		return subs.plans.find((p: any) => p.key === planKey) ?? subs.plans[0];
+		return subs.plans.find((p) => p.key === planKey) ?? subs.plans[0];
 	}, [subs, planKey]);
 	const {
 		state,
@@ -156,11 +156,6 @@ export default function SubscriptionDialog({
 		);
 	}, [COUNTRY_CODES, countrySearch]);
 
-	const goNext = () => {
-		// validate current step with stricter rules before moving forward
-		goNextFrom(openItem as any);
-	};
-
 	return (
 		<Dialog open={open} onOpenChange={onOpenChange}>
 			<DialogContent className="sm:max-w-md p-0 overflow-hidden bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border-0 shadow-2xl">
@@ -227,7 +222,7 @@ export default function SubscriptionDialog({
 							collapsible
 							value={openItem}
 							onValueChange={(v) =>
-								setStep(((v as string) || openItem) as any)
+								setStep(((v as string) || openItem) as StepKey)
 							}
 							className="gap-2"
 						>
@@ -288,7 +283,6 @@ export default function SubscriptionDialog({
 											</label>
 											<Input
 												placeholder="Enter your full name"
-												className="w-full h-10 text-sm border-2 border-gray-200 rounded-xl px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 backdrop-blur-sm hover:border-gray-300"
 												value={fullName}
 												onChange={(e) =>
 													updateField(
@@ -318,7 +312,6 @@ export default function SubscriptionDialog({
 											<Input
 												type="email"
 												placeholder="Enter your email address"
-												className="w-full h-10 text-sm border-2 border-gray-200 rounded-xl px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80 backdrop-blur-sm hover:border-gray-300"
 												value={email}
 												onChange={(e) =>
 													updateField(
@@ -377,12 +370,12 @@ export default function SubscriptionDialog({
 															onClick={() => {
 																if (
 																	!validateStep(
-																		"personal" as any
+																		"personal"
 																	)
 																)
 																	return;
 																setStep(
-																	"contact" as any
+																	"contact"
 																);
 															}}
 															className="w-full h-11 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 disabled:from-gray-300 disabled:to-gray-400 text-white text-sm font-semibold rounded-xl transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02] disabled:transform-none"
@@ -570,7 +563,7 @@ export default function SubscriptionDialog({
 														}
 														onClick={() =>
 															goNextFrom(
-																"contact" as any
+																"contact"
 															)
 														}
 														className="w-full h-11 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 disabled:from-gray-300 disabled:to-gray-400 text-white text-sm font-semibold rounded-xl transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02] disabled:transform-none"
@@ -687,13 +680,11 @@ export default function SubscriptionDialog({
 														onClick={() => {
 															if (
 																!validateStep(
-																	"kyc" as any
+																	"kyc"
 																)
 															)
 																return;
-															setStep(
-																"plan" as any
-															);
+															setStep("plan");
 														}}
 														className="w-full h-11 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 disabled:from-gray-300 disabled:to-gray-400 text-white text-sm font-semibold rounded-xl transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02] disabled:transform-none"
 													>
@@ -859,8 +850,9 @@ export default function SubscriptionDialog({
 												<span className="text-sm text-gray-700 leading-relaxed">
 													I have gone through the
 													Disclaimers mentioned in the
-													website. I'm purchasing this
-													plan with understanding of
+													website. I&apos;m purchasing
+													this plan with understanding
+													of
 													<button
 														type="button"
 														className="text-blue-600 underline hover:text-blue-700 font-semibold transition-colors duration-200 ml-1"

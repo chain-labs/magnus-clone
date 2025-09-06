@@ -1,7 +1,7 @@
 "use client";
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useReducer } from "react";
 
-type StepKey = "personal" | "contact" | "kyc" | "plan";
+export type StepKey = "personal" | "contact" | "kyc" | "plan";
 
 type SubscriptionFields = {
   fullName: string;
