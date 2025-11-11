@@ -2,7 +2,6 @@
 export { default as HeroEnhanced } from "./hero-enhanced";
 export { default as IPOEnhanced } from "./ipo-enhanced";
 export { default as SubscriptionEnhanced } from "./subscription-enhanced";
-export { default as FAQEnhanced, FAQWithSearch } from "./faq-enhanced";
 
 // Original components (for backward compatibility)
 export { default as Hero } from "./hero";
