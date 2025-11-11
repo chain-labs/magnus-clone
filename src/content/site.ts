@@ -101,6 +101,10 @@ Duration: Yearly
 Price: ₹11,999 (including GST)
 
 Description: Covers all major IPOs listed on the NSE/BSE mainboard with timely recommendations and guidance`,
+				cta: {
+					label: "Invest Now",
+					href: "#pricing",
+				},
 			},
 			{
 				key: "ipo-edge-sme-mainboard",
@@ -121,6 +125,10 @@ Duration: Yearly
 Price: ₹19,999/- (including GST)
 
 Description: Includes everything in the Mainboard IPO plan, plus detailed coverage of high-potential SME IPOs across sectors `,
+				cta: {
+					label: "Invest Now",
+					href: "#pricing",
+				},
 			},
 		],
 	},
@@ -184,7 +192,7 @@ With over 12 years of experience in the Indian stock market, he combines deep ma
 An experienced Chartered Accountant and a SEBI Registered Research Analyst, Ali’s investment philosophy focuses on identifying high-quality, high-growth stocks with a medium to long-term perspective
 His diverse career path includes roles as a financial news anchor, accounts professor, and now, a full-time content creator, where he continues to simplify complex financial concepts for thousands of followers.`,
 				years: 12,
-				sebi: "INH000016588"
+				sebi: "INH000016588",
 			},
 			{
 				name: "Rahul Pandey",

@@ -121,14 +121,14 @@ export default function Subscription() {
 							</div>
 						</div>
 
-						<div className="w-full bottom-0 p-4 flex justify-center align relative z-10">
+						<a href={plan.cta?.href} className="w-full bottom-0 p-4 flex justify-center align relative z-10">
 							<button
 								type="button"
-								onClick={() => setDialogOpen(true)}
+								// onClick={() => setDialogOpen(true)}
 								className="group w-full py-2.5 px-4 flex items-center justify-center rounded-lg font-medium text-sm text-white relative overflow-hidden transition-all duration-300 shadow-md bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 hover:-translate-y-0.5 hover:shadow-blue-300/30 bg-[length:200%_100%] bg-[position:0%_0%] hover:bg-[position:100%_0%]"
 							>
 								<span className="relative z-10 flex items-center justify-center">
-									{plan.cta?.label || "Invest Now"}
+									{plan.cta?.label}
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="24"
@@ -146,7 +146,7 @@ export default function Subscription() {
 									</svg>
 								</span>
 							</button>
-						</div>
+						</a>
 
 						<div className="absolute top-0 right-0 w-24 h-24 bg-blue-100 rounded-bl-full -mr-12 -mt-12 opacity-50" />
 					</div>

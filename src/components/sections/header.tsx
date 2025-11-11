@@ -53,7 +53,7 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            <div className="ml-4">
+            {/* <div className="ml-4">
               <Link
                 href="#pricing"
                 className={cn(
@@ -63,7 +63,7 @@ export default function Header() {
               >
                 Login/Register
               </Link>
-            </div>
+            </div> */}
           </div>
           {/* Mobile toggle */}
           <div className="lg:hidden">
