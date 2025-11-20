@@ -1,4 +1,4 @@
-import { any } from "zod"
+import { any } from "zod";
 
 const siteContent = {
 	header: {
@@ -23,7 +23,7 @@ const siteContent = {
 		title: "Stock Recommendations To Elevate Your Portfolio",
 		billingCycles: [
 			{ key: "yearly", label: "Yearly" },
-			{ key: "halfYearly", label: "Half-yearly" },
+			// { key: "halfYearly", label: "Half-yearly" },
 			{ key: "quarterly", label: "Quarterly" },
 		],
 		plans: [
@@ -38,19 +38,33 @@ const siteContent = {
 					halfYearly: 6999,
 					quarterly: 3999,
 				},
-				features: [
-					"Messages for when to buy",
-					"Messages for when to sell",
-					"Messages for partial profit booking",
-					"Messages for full profit booking",
-					"Research reports for all recommendations",
-					"Regular updates on portfolio stocks",
-					"Customer care support via email",
-					"Quarterly live webinars to solve your queries",
-				],
+				features: {
+					yearly: [
+						"Messages for when to buy, and when to sell",
+						"Messages for when to book out partial gains, or full profits",
+						"Research report for all investing recommendations",
+						"Occasional swing trades depending on market conditions",
+						"Regular update on portfolio stocks",
+						"Customer care support via email",
+					],
+					quarterly: [
+						"Messages for when to buy, and when to sell",
+						"Messages for when to book out partial gains, or full profits",
+						"Research report for all investing recommendations",
+						"Occasional swing trades depending on market conditions",
+						"Regular update on portfolio stocks",
+						"Customer care support via email",
+					],
+				},
 				cta: {
-					label: "Invest Now",
-					href: "#pricing",
+					yearly: {
+						label: "Invest Now",
+						href: "https://magnushathaway.exlyapp.com/checkout/6f71cbff-4b3b-4505-b9da-36bcfcaa9e5b",
+					},
+					quarterly: {
+						label: "Invest Now",
+						href: "https://magnushathaway.exlyapp.com/checkout/e6b1b9ca-da1a-4ac1-88ce-4e24105e6a0c",
+					},
 				},
 			},
 		],
@@ -211,15 +225,42 @@ His diverse career path includes roles as a financial news anchor, accounts prof
 		brand: "Magnus Hathaway",
 		logo: "/assets/logo.png",
 		nav: [
-			{ label: "Investor Charter (Annexure A)", href: "https://magnushathaway.b-cdn.net/1.%20Annexure%20A-%20Investor%20Charter.docx" },
-			{ label: "Investor Complaints (Annexure B)", href: "https://magnushathaway.b-cdn.net/2.%20Annexure%20B%20-%20Complaint%20Data.xlsx" },
-			{ label: "Grievance Redressal Process", href: "https://magnushathaway.b-cdn.net/3.%20Redressal%20Grievance.docx" },
-			{ label: "Disclaimers", href: "https://magnushathaway.b-cdn.net/4.%20Disclaimer.docx" },
-			{ label: "Disclosures", href: "https://magnushathaway.b-cdn.net/5.%20Disclosures.docx" },
-			{ label: "Escalation Matrix", href: "https://magnushathaway.b-cdn.net/6.%20Escalation%20Matrix.docx" },
-			{ label: "Audit Report", href: "https://magnushathaway.b-cdn.net/8.%20Audit%20Status.docx" },
-			{ label: "Code of Conduct", href: "https://magnushathaway.b-cdn.net/10.%20Code%20of%20Conduct.docx" },
-			{ label: "PMLA Policy", href: "https://magnushathaway.b-cdn.net/11.%20PMLA%20Policy.docx" },
+			{
+				label: "Investor Charter (Annexure A)",
+				href: "https://magnushathaway.b-cdn.net/1.%20Annexure%20A-%20Investor%20Charter.docx",
+			},
+			{
+				label: "Investor Complaints (Annexure B)",
+				href: "https://magnushathaway.b-cdn.net/2.%20Annexure%20B%20-%20Complaint%20Data.xlsx",
+			},
+			{
+				label: "Grievance Redressal Process",
+				href: "https://magnushathaway.b-cdn.net/3.%20Redressal%20Grievance.docx",
+			},
+			{
+				label: "Disclaimers",
+				href: "https://magnushathaway.b-cdn.net/4.%20Disclaimer.docx",
+			},
+			{
+				label: "Disclosures",
+				href: "https://magnushathaway.b-cdn.net/5.%20Disclosures.docx",
+			},
+			{
+				label: "Escalation Matrix",
+				href: "https://magnushathaway.b-cdn.net/6.%20Escalation%20Matrix.docx",
+			},
+			{
+				label: "Audit Report",
+				href: "https://magnushathaway.b-cdn.net/8.%20Audit%20Status.docx",
+			},
+			{
+				label: "Code of Conduct",
+				href: "https://magnushathaway.b-cdn.net/10.%20Code%20of%20Conduct.docx",
+			},
+			{
+				label: "PMLA Policy",
+				href: "https://magnushathaway.b-cdn.net/11.%20PMLA%20Policy.docx",
+			},
 		],
 		raInfo: {
 			name: "Alireza Azar",

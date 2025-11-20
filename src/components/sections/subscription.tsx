@@ -5,8 +5,8 @@ import { PrimeOnboardingModal } from "../prime";
 
 export default function Subscription() {
 	const subs = siteContent.subscriptions;
-	const [activeKey, setActiveKey] = useState(
-		subs?.billingCycles?.[0]?.key ?? "yearly"
+	const [activeKey, setActiveKey] = useState<"yearly" | "quarterly">(
+		(subs?.billingCycles?.[0]?.key as "yearly" | "quarterly") ?? "yearly"
 	);
 
 	const plan = subs?.plans?.[0];
@@ -42,7 +42,11 @@ export default function Subscription() {
 											? "text-blue-700 border-blue-700"
 											: "text-gray-500 border-transparent hover:text-blue-600 hover:border-blue-300"
 									}`}
-									onClick={() => setActiveKey(cycle.key)}
+									onClick={() =>
+										setActiveKey(
+											cycle.key as "yearly" | "quarterly"
+										)
+									}
 								>
 									{cycle.label}
 								</button>
@@ -107,7 +111,7 @@ export default function Subscription() {
 							</div>
 							<div className="flex flex-col items-start px-7 w-full">
 								<ul className="font-poppins text-[12.5px] flex flex-col items-start space-y-2 text-[#666666] w-full max-h-[225px] overflow-y-auto">
-									{plan.features.map(
+									{plan.features?.[activeKey].map(
 										(f: string, idx: number) => (
 											<li
 												key={idx}
@@ -121,14 +125,17 @@ export default function Subscription() {
 							</div>
 						</div>
 
-						<a href={plan.cta?.href} className="w-full bottom-0 p-4 flex justify-center align relative z-10">
+						<a
+							href={plan.cta?.[activeKey].href}
+							className="w-full bottom-0 p-4 flex justify-center align relative z-10"
+						>
 							<button
 								type="button"
 								// onClick={() => setDialogOpen(true)}
 								className="group w-full py-2.5 px-4 flex items-center justify-center rounded-lg font-medium text-sm text-white relative overflow-hidden transition-all duration-300 shadow-md bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 hover:-translate-y-0.5 hover:shadow-blue-300/30 bg-[length:200%_100%] bg-[position:0%_0%] hover:bg-[position:100%_0%]"
 							>
 								<span className="relative z-10 flex items-center justify-center">
-									{plan.cta?.label}
+									{plan.cta?.[activeKey].label}
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="24"
