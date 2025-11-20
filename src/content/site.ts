@@ -227,39 +227,39 @@ His diverse career path includes roles as a financial news anchor, accounts prof
 		nav: [
 			{
 				label: "Investor Charter (Annexure A)",
-				href: "https://magnushathaway.b-cdn.net/1.%20Annexure%20A-%20Investor%20Charter.docx",
+				href: "https://magnushathaway.b-cdn.net/1.%20Annexure%20A-%20Investor%20Charter.docx.pdf",
 			},
 			{
 				label: "Investor Complaints (Annexure B)",
-				href: "https://magnushathaway.b-cdn.net/2.%20Annexure%20B%20-%20Complaint%20Data.xlsx",
+				href: "https://magnushathaway.b-cdn.net/2.%20Annexure%20B%20-%20Complaint%20Data.xlsx%20-%20Annexure-%20B.pdf",
 			},
 			{
 				label: "Grievance Redressal Process",
-				href: "https://magnushathaway.b-cdn.net/3.%20Redressal%20Grievance.docx",
+				href: "https://magnushathaway.b-cdn.net/3.%20Redressal%20Grievance.docx.pdf",
 			},
 			{
 				label: "Disclaimers",
-				href: "https://magnushathaway.b-cdn.net/4.%20Disclaimer.docx",
+				href: "https://magnushathaway.b-cdn.net/4.%20Disclaimer.docx.pdf",
 			},
 			{
 				label: "Disclosures",
-				href: "https://magnushathaway.b-cdn.net/5.%20Disclosures.docx",
+				href: "https://magnushathaway.b-cdn.net/5.%20Disclosures.docx.pdf",
 			},
 			{
 				label: "Escalation Matrix",
-				href: "https://magnushathaway.b-cdn.net/6.%20Escalation%20Matrix.docx",
+				href: "https://magnushathaway.b-cdn.net/6.%20Escalation%20Matrix.docx.pdf",
 			},
 			{
 				label: "Audit Report",
-				href: "https://magnushathaway.b-cdn.net/8.%20Audit%20Status.docx",
+				href: "https://magnushathaway.b-cdn.net/8.%20Audit%20Status.docx.pdf",
 			},
 			{
 				label: "Code of Conduct",
-				href: "https://magnushathaway.b-cdn.net/10.%20Code%20of%20Conduct.docx",
+				href: "https://magnushathaway.b-cdn.net/10.%20Code%20of%20Conduct.docx.pdf",
 			},
 			{
 				label: "PMLA Policy",
-				href: "https://magnushathaway.b-cdn.net/11.%20PMLA%20Policy.docx",
+				href: "https://magnushathaway.b-cdn.net/11.%20PMLA%20Policy.docx.pdf",
 			},
 		],
 		raInfo: {
