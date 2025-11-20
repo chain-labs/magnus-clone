@@ -196,7 +196,7 @@ Description: Includes everything in the Mainboard IPO plan, plus detailed covera
 	},
 	team: {
 		id:"about",
-		title: "Meet the RA and Team",
+		title: "Meet the",
 		members: [
 			{
 				name: "Alireza Azar",
@@ -209,15 +209,6 @@ An experienced Chartered Accountant and a SEBI Registered Research Analyst, Aliâ
 His diverse career path includes roles as a financial news anchor, accounts professor, and now, a full-time content creator, where he continues to simplify complex financial concepts for thousands of followers.`,
 				years: 12,
 				sebi: "INH000016588",
-			},
-			{
-				name: "Rahul Pandey",
-				image: "/assets/team/rahul.png",
-				twitter:
-					"https://x.com/Stock_Precision?t=J7vM7vANFFfrlEVfCNq8Zg&s=09",
-				bio: `Rahul is an accomplished capital markets professional with over a decade of experience, specializing in portfolio investing, options writing, and quantitative and fundamental analysis. An NSE Certified Analyst and former Wilhelmsen professional, Rahul leverages his expertise to decode market trends and investment strategies,
- earning the trust of over 1,85,000+ followers across social media. Rahulâ€™s unique blend of analytical skills and practical knowledge makes him a go-to authority in the finance community.`,
-				years: 10,
 			},
 		],
 	},

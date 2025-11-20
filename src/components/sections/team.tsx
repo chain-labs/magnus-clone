@@ -12,12 +12,12 @@ export default function Team() {
 				<h2 className="text-5xl font-extrabold text-center mb-20 text-gray-800">
 					{team.title.split("RA and Team")[0]}
 					<span className="text-[#1a378d] relative">
-						<br className="md:hidden" /> RA and Team
+						<br className="md:hidden" /> RA
 						<span className="absolute bottom-0 left-0 w-full h-3 bg-indigo-200 -z-10 transform -skew-x-12" />
 					</span>
 				</h2>
 
-				<div className="grid md:grid-cols-2 gap-10 px-0 md:px-36 lg:px-36">
+				<div className="max-w-[900px] px-0 md:px-36 lg:px-36 mx-auto">
 					{team.members.map((m) => (
 						<div key={m.name}>
 							<div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col group h-full">
@@ -56,7 +56,7 @@ export default function Team() {
 												</a>
 											</div>
 										)}
-										{m.twitter && (
+										{/* {m.twitter && (
 											<div className="flex items-center gap-4">
 												<a
 													href={m.twitter}
@@ -68,7 +68,7 @@ export default function Team() {
 													<span>Visit Twitter</span>
 												</a>
 											</div>
-										)}
+										)} */}
 
 										<div className="flex flex-row items-start md:items-center gap-2 md:gap-10 mt-2">
 											<div className="flex items-center gap-2">
