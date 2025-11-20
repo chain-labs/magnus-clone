@@ -53,7 +53,7 @@ export default function FAQ() {
   const [openRight, setOpenRight] = useState<Record<number, boolean>>({});
 
   return (
-    <div className="bg-white" id="faqSection">
+    <div className="bg-white" id={faq.id}>
       <h1 className="text-[28px] md:text-[40px] lg:text-[40px] text-center font-bold text-black pt-14">{faq.title}</h1>
       <div className="h-auto">
         <div className="grid grid-cols-1 mx-2 md:grid-cols-2 md:gap-x-8">

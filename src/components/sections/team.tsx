@@ -6,7 +6,7 @@ export default function Team() {
 	return (
 		<section
 			className="pb-24 pt-14 bg-gradient-to-b from-gray-50 to-white"
-			id="teamSection"
+			id={team.id}
 		>
 			<div className="container mx-auto px-4">
 				<h2 className="text-5xl font-extrabold text-center mb-20 text-gray-800">

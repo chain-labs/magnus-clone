@@ -9,7 +9,7 @@ const siteContent = {
 				label: "Plans",
 			},
 			{
-				href: "# about",
+				href: "#about",
 				label: "About RA",
 			},
 			{
@@ -23,20 +23,18 @@ const siteContent = {
 		title: "Stock Recommendations To Elevate Your Portfolio",
 		billingCycles: [
 			{ key: "yearly", label: "Yearly" },
-			// { key: "halfYearly", label: "Half-yearly" },
 			{ key: "quarterly", label: "Quarterly" },
 		],
 		plans: [
 			{
 				key: "prime",
-				name: "Prime",
+				name: "Bespoke Investing",
 				currency: "INR",
 				currencySymbol: "₹",
 				priceSuffix: "+ GST",
 				prices: {
-					yearly: 11999,
-					halfYearly: 6999,
-					quarterly: 3999,
+					yearly: 17699,
+					quarterly: 6999,
 				},
 				features: {
 					yearly: [
@@ -149,6 +147,7 @@ Description: Includes everything in the Mainboard IPO plan, plus detailed covera
 		],
 	},
 	faq: {
+		id:"faq",
 		title: "Frequently Asked Questions",
 		left: [
 			{
@@ -196,6 +195,7 @@ Description: Includes everything in the Mainboard IPO plan, plus detailed covera
 		],
 	},
 	team: {
+		id:"about",
 		title: "Meet the RA and Team",
 		members: [
 			{
