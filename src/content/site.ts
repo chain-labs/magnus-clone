@@ -1,3 +1,5 @@
+import { any } from "zod"
+
 const siteContent = {
 	header: {
 		logo: "/assets/logo.png",
@@ -209,31 +211,40 @@ His diverse career path includes roles as a financial news anchor, accounts prof
 		brand: "Magnus Hathaway",
 		logo: "/assets/logo.png",
 		nav: [
-			{ label: "Disclaimer", href: "#" },
-			{ label: "T&C Magnus Hathaway", href: "#" },
-			{ label: "Privacy Policy", href: "#" },
-			{ label: "Contact Us", href: "#" },
-			{ label: "Investor Charter", href: "#" },
-			{ label: "Disclosures", href: "#" },
-			{ label: "Grievance Redressal", href: "#" },
-			{ label: "List of Documents", href: "#" },
-			{ label: "Annexure B", href: "#" },
+			{ label: "Investor Charter (Annexure A)", href: "https://magnushathaway.b-cdn.net/1.%20Annexure%20A-%20Investor%20Charter.docx" },
+			{ label: "Investor Complaints (Annexure B)", href: "https://magnushathaway.b-cdn.net/2.%20Annexure%20B%20-%20Complaint%20Data.xlsx" },
+			{ label: "Grievance Redressal Process", href: "https://magnushathaway.b-cdn.net/3.%20Redressal%20Grievance.docx" },
+			{ label: "Disclaimers", href: "https://magnushathaway.b-cdn.net/4.%20Disclaimer.docx" },
+			{ label: "Disclosures", href: "https://magnushathaway.b-cdn.net/5.%20Disclosures.docx" },
+			{ label: "Escalation Matrix", href: "https://magnushathaway.b-cdn.net/6.%20Escalation%20Matrix.docx" },
+			{ label: "Audit Report", href: "https://magnushathaway.b-cdn.net/8.%20Audit%20Status.docx" },
+			{ label: "Code of Conduct", href: "https://magnushathaway.b-cdn.net/10.%20Code%20of%20Conduct.docx" },
+			{ label: "PMLA Policy", href: "https://magnushathaway.b-cdn.net/11.%20PMLA%20Policy.docx" },
 		],
 		raInfo: {
 			name: "Alireza Azar",
 			sebiRegNo: "INH000016588",
 			address:
-				"904, A Wing, Salarpuria Silverwoods, Varthur Road, CV Raman Nagar, Nagavara Palya, Bengaluru 560093",
+				"No. 15/A904, Varthur Road, C V Raman Nagar, Nagavara Palya, Bangalore, Karnataka - 560093",
+		},
+		grievance: {
+			name: "Abdul Ahad Khan",
+			tel: "+91 9636336788",
+			email: "ahad@magnushathaway.com",
+		},
+		contact: {
+			name: "Alireza Azar",
+			tel: "+91 99834 51155",
+			email: "ali_azar@live.com",
 		},
 		disclaimers: [
-			"Investments in securities market are subject to market risks. Read all the security related documents carefully before investing.",
+			"Investment in securities market are subject to market risks. Read all the related documents carefully before investing.",
 			"Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.",
-			"Standard disclosure text regarding research methodology and conflict of interest (Placeholder).",
 		],
-		copyright: "Copyright © 2024 All rights reserved",
+		copyright: "Copyright © 2025 All rights reserved",
 		credit: {
-			by: "AlphaQuark",
-			label: "Made with ❤️ by AlphaQuark",
+			by: "Chainlabs",
+			label: "Made with ❤️ by Chainlabs",
 		},
 	},
 };
