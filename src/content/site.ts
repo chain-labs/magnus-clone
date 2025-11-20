@@ -31,7 +31,7 @@ const siteContent = {
 				name: "Bespoke Investing",
 				currency: "INR",
 				currencySymbol: "₹",
-				priceSuffix: "+ GST",
+				priceSuffix: "(GST Incl)",
 				prices: {
 					yearly: 17699,
 					quarterly: 6999,
@@ -101,7 +101,7 @@ const siteContent = {
 				name: "IPO Edge",
 				price: 9999,
 				currencySymbol: "₹",
-				priceSuffix: "+ GST",
+				priceSuffix: "(GST Incl)",
 				description: `For every IPO we track, we’ll tell you:
 
 Avoid
@@ -125,7 +125,7 @@ Description: Covers all major IPOs listed on the NSE/BSE mainboard with timely r
 				name: "IPO Edge - SME + Mainboard",
 				price: 16950,
 				currencySymbol: "₹",
-				priceSuffix: "+ GST",
+				priceSuffix: "(GST Incl)",
 				description: `For every IPO we track, we’ll tell you:
 
 Avoid
@@ -277,6 +277,10 @@ His diverse career path includes roles as a financial news anchor, accounts prof
 			name: "Alireza Azar",
 			tel: "+91 99834 51155",
 			email: "ali_azar@live.com",
+		},
+		sebiOffice: {
+			address: "Head Office Address: Plot No. C4-A, ‘G’ Block Bandra-Kurla Complex, Bandra (East), Mumbai, Maharashtra - 400051",
+			localAddress: "7th Floor, 756-L, Anna Salai, Chennai - 600002, Tamil Nadu"
 		},
 		disclaimers: [
 			"Investment in securities market are subject to market risks. Read all the related documents carefully before investing.",

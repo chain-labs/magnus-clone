@@ -144,6 +144,23 @@ export default function Footer() {
 				</div>
 
 				<div className="mb-6 text-center">
+					<div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200 max-w-5xl mx-auto">
+						<h3 className="text-lg font-semibold text-gray-800 mb-3">
+							SEBI Office Details
+						</h3>
+						<div className="text-sm text-gray-700 space-y-2">
+							<div className="flex flex-col sm:flex-row sm:justify-center sm:items-center sm:gap-8">
+								<p>{footer.sebiOffice.address}</p>
+							</div>
+							<p>
+								<strong>Local Office Address:</strong>{" "}
+								{footer.sebiOffice.localAddress}
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="mb-6 text-center">
 					<div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200 max-w-5xl mx-auto">
 						<div className="text-sm text-gray-700 space-y-3">
 							<p className="font-medium text-gray-800">
