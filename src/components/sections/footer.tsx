@@ -17,7 +17,7 @@ export default function Footer() {
 						</span>
 					</div>
 					<nav className="mb-8 w-full">
-						<div className="flex flex-col space-y-3 items-center md:hidden">
+						{/* <div className="flex flex-col space-y-3 items-center md:hidden">
 							{footer.nav.map((l) => (
 								<a
 									key={l.label}
@@ -30,8 +30,8 @@ export default function Footer() {
 									{l.label}
 								</a>
 							))}
-						</div>
-						<div className="hidden md:flex justify-center items-center overflow-x-auto whitespace-nowrap py-2">
+						</div> */}
+						<div className="flex flex-wrap justify-center items-center overflow-x-auto whitespace-nowrap py-2 max-w-[1200px] mx-auto">
 							{footer.nav.map((l, idx) => (
 								<span
 									key={l.label}
